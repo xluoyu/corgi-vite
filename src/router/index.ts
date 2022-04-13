@@ -1,6 +1,7 @@
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
+import permission from './permission'
 
 export const loadAsyncRoutesStatus = ref(false) // 异步路由加载状态
 const constantRoutes: RouteRecordRaw[] = [] // 公用路由
@@ -41,4 +42,4 @@ export function resetRouter() {
   loadAsyncRoutesStatus.value = false
 }
 
-export default router
+export default permission(router)
