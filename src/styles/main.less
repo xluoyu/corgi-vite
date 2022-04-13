@@ -1,0 +1,27 @@
+@import './variables.less';
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #121212;
+}
+
+.line-ipt .el-input__inner{
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+}
+.btn{
+  background: linear-gradient(180deg, #ABF4BF 0%, #ABF4BF 0%, #3FA66E 100%, #3FA66E 100%);
+  border-radius: 20px;
+  color: #fff !important;
+  &:hover{
+    filter: brightness(85%);
+  }
+}
