@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const name = $ref('')
+const name = ref('')
 
 const router = useRouter()
 const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
+  if (name.value)
+    router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 </script>
 
